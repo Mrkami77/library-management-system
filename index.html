@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+    <main>
+        <section class="controls">
+            <h2>Library Controls</h2>
+            <form id="book-form">
+                <label for="title">Book Title:</label>
+                <input type="text" id="title" placeholder="Enter book title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" placeholder="Enter author name" required>
+
+                <label for="year">Year:</label>
+                <input type="number" id="year" placeholder="Enter year" required>
+
+                <button type="submit" class="btn add-btn">Add Book</button>
+            </form>
+        </section>
+        <section class="book-table">
+            <h2>Books Collection</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+                    <!-- Books will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Library Management System © 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
